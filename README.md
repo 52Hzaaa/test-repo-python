@@ -7,4 +7,5 @@
    - `delete_repo` - 删除仓库权限（可选）
    
 最后在 github_dingtalk_agent.py 文件设置你的github tokens (github_token = "your_github_token")
+
 运行 github_dingtalk_agent.py 即可使用 GitBot Aegnt
