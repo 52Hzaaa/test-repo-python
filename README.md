@@ -1,19 +1,10 @@
-# 测试仓库
 
-这是通过GitHub API创建的测试仓库。
-
-## 功能特性
-
-- 通过Python HTTP请求操作GitHub
-- 支持仓库、文件、Issue等操作
-- 简单易用的API封装
-
-## 使用方法
-
-```python
-from github_client import GitHubClient
-
-client = GitHubClient("your_token")
-user = client.get_user()
-print(user['login'])
-```
+1. 访问 [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+2. 生成新的个人访问令牌
+3. 选择所需权限：
+   - `repo` - 仓库访问权限
+   - `user` - 用户信息权限
+   - `delete_repo` - 删除仓库权限（可选）
+   
+最后在 github_dingtalk_agent.py 文件设置你的github tokens (github_token = "your_github_token")
+运行 github_dingtalk_agent.py 即可使用 GitBot Aegnt
